@@ -1,0 +1,122 @@
+.hero{
+    position: relative;
+}
+.bannerimg{
+    width: 100%;
+    -weblit-mask-image:linear-gradient(to right,transparent,black 75%);
+    mask-image: linear-gradient(to right,transparent,black 75%);
+
+}
+.herocaption{
+    position: absolute;
+    width: 100%;
+    padding-left: 6%;
+    bottom: 0;
+}
+.captionimg{
+    width: 90%;
+    max-width: 420px;
+    margin-bottom: 30px;
+
+}
+.herocaption p{
+    max-width: 700px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.herobtns{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+
+}
+.herobtns .btn img{
+    width: 25px;
+}
+.herobtns .btn{
+    border: 0;
+    outline: 0;
+    padding: 8px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.herobtns .btndarkbtn img{
+    width: 25px;
+}
+.herobtns .btndarkbtn{
+    border: 0;
+    outline: 0;
+    padding: 8px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.herobtns .btndarkbtn{
+color: #fff;
+background: #6d6d6eb3;
+}
+.herobtns .btn:hover{
+    background: #ffffffbf;
+
+}
+.herobtns .btndarkbtn:hover{
+    background: #6d6d6e66;
+}
+.morecards{
+    padding-left: 6%;
+}
+@media(max-width:1024px){
+    .herocaption .title{
+        display: none;
+    }
+    .herocaption{
+        margin-bottom: 30px;
+    }
+
+}
+@media(max-width:800px)  {
+    .herocaption{
+        padding-left: 4%;
+    }
+    .captionimg{
+        margin-bottom: 10px;
+        width: 40%;
+    }
+    .herocaption p{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+     .herobtns .btn img{
+        width: 20px;
+    }
+    .morecards{
+        padding-left: 4%;
+    }
+}
+@media(max-width: 500px){
+    .captionimg{
+        display: none;
+    }
+    .herobtns .btn img{
+        width: 15px;
+    }
+    .btn{
+        padding: 4px 10px;
+        gap: 5px;
+        font-size: 10px;
+    }
+}
